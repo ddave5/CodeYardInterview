@@ -1,0 +1,9 @@
+.back__to__login__button {
+  font: 14px/30px var(--font-open-sans);
+  font-weight: 600;
+  color: var(--color-white);
+  background: transparent;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
+  padding: 5px 40px;
+}

@@ -1,0 +1,48 @@
+.page__not__found__container { 
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.page__not__found__background {
+  background: url('../../assets/404_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(16px);
+}
+
+.page__not__found__title {
+  position: absolute;
+  align-self: center;
+  width: 80%;
+  height: 100vh;
+  top: 0;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 500%;
+  font-weight: 600;
+  word-wrap: break-word;
+  color: var(--color-white);
+}
+
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES) ============================ */
+
+@media screen and (max-width: 1024px) {
+  .page__not__found__title {
+    font-size: 400%;
+  }
+}
+
+/* ============================ MEDIA QUERIES (SMALL DEVICES) ============================ */
+
+@media screen and (max-width: 600px) {
+  .page__not__found__title {
+    font-size: 300%;
+  }
+}

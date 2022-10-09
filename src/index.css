@@ -1,13 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-gray_10: #F7F7F7;
+  --color-gray_20: #E0E0E0;
+  --color-gray_30: #D4D4D4;
+  --color-gray_40: #BEBEBE;
+  --color-gray_50: #A1A1A1;
+  --color-gray_60: #757575;
+
+  --color-blue: #4A90E2;
+  --color-tear: #0A96A3;
+  --color-yellow: #F9C466;
+  --color-red: #CD4146;
+
+  --color-error-red_100: #C61A09;
+  --color-error-red_80: #FFC9BB;
+
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-apple-system: -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --transition: 500ms ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h1 {
+  font: 30px/30px var(--font-open-sans);
+  color: var(--color-gray_60);
+  font-weight: 600;
+}
+
+h2 {
+  font: 30px/44px var(--font-open-sans);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+h3 {
+  font: 14px/17px var(--font-apple-system);
+  color: var(--color-gray_60);
+}
+
+h4 {
+  font: 14px/30px var(--font-apple-system);
+  line-height: 30px;
+  color: var(--color-white);
+}
+
+h5 {
+  font: 14px/17px var(--font-apple-system);
+  color: var(--color-gray_50);
+}
+
+h6 {
+  font: 14px/19px var(--font-open-sans);
+  color: var(--color-gray_50);
+  font-weight: 600;
+}
+
+.margin-bottom-1rem {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-2rem {
+  margin-bottom: 2rem;
+}
+
+.stroke {
+  -webkit-text-stroke: 2px black;
 }

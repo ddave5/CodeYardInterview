@@ -1,0 +1,12 @@
+.footer__trademark {
+  font: 12px/15px var(--font-apple-system);
+  color: var(--color-gray_50);
+  margin-right: 1rem;
+}
+
+.footer__actions {
+  font: 12px/15px var(--font-open-sans);
+  color: var(--color-gray_50);
+  font-weight: 600;
+  margin-right: .5rem;
+}
