@@ -5,6 +5,7 @@ import Seen from '../../assets/fa-eye.png';
 import UnSeen from '../../assets/fa-eye-slash.png';
 import axios from 'axios';
 import AcmeLogo from '../../assets/acme.png';
+import ReactTooltip from 'react-tooltip';
 
 //TODO: 
 // - code refact
@@ -88,6 +89,7 @@ const Registration = () => {
 
   return (
     <div className="open">
+      <ReactTooltip />
       <div className='background__image' />
         <div className='auth__container'>
           <div className='login__container ' data-aos="fade-right">
@@ -98,15 +100,15 @@ const Registration = () => {
               <div className='login__form__container margin-bottom-2rem'>
                 <div className='login__email__container'>
                   <label htmlFor='loginEmail' id='emailLabel' className='login__label'>Email</label>
-                  <input id='loginEmail' type="text" value={email}
+                  <input id='loginEmail' type="text" value={email} data-tip="Try the 'test@codeyard.eu' word!"
                           name='loginEmail' placeholder='Enter your e-mail address here!' 
                           className='margin-bottom-1rem' onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div className='passwordInput'>
                   <div className='login__password__container'>
-                    <label htmlFor='loginPassword' id='passwordLabel' className='login__label'>Password</label>
-                    <input id='loginPassword' type={passwordVisible ? "text" : "password"} value={password}
-                          name='loginPassword' className='margin-bottom-1rem' onChange={addPasswordLetter}
+                    <label htmlFor='loginPassword' id='passwordLabel' className='login__label' >Password</label>
+                    <input id='loginPassword' type={passwordVisible ? "text" : "password"} value={password} 
+                          name='loginPassword' className='margin-bottom-1rem' onChange={addPasswordLetter} data-tip="Try the 'letmein' word!"
                           />
                   </div>
                   <button id='showPassword' onClick={()=> setPasswordVisible(!passwordVisible)} className='login__passwordVisible__button'>
