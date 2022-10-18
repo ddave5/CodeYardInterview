@@ -24,6 +24,7 @@ const Registration = () => {
       setEmail(JSON.parse(localStorage.getItem('loginDatas')).email);
       setPassword(JSON.parse(localStorage.getItem('loginDatas')).password);
       setRemember(true);
+      passwordStrength(password);
     }
   }, [])
 
